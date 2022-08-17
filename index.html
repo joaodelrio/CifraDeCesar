@@ -1,0 +1,320 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ico/cifraLogo.ico" type="image/x-icon">
+    <title>Cifra de César</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat+Alternates&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Cifra de césar</h1>
+    </header>
+    <section>
+        <header>
+            <h2 class="subtitle">Insira a mensagem na caixa e clique na opção desejada (OBS: Utilize letras minusculas):</h2>
+        </header>
+        <section class="box-message">
+            <input type="text" id="message" pattern="[a-z]" placeholder="Escreva sua mensagem aqui">
+        </section>
+        <section class="buttons">
+            <button onclick="encrypt()"class="button" id="cryptography" >Criptografar</button>
+            <button onclick="decrypt()" class="button" id="decryption" >Descriptografar</button>
+        </section>
+        <section id="box-result">
+            <p id="result">
+            
+            </p>
+        </section>
+
+    </section>
+    <script>
+        const encrypt = () =>{
+            var input = document.getElementById("message");
+            // var texto = input.value;
+            var entrada = input.value;
+            entrada.split();
+            var saida = new Array();
+            let j=0;
+            saida[0] = 'a';
+            for(var i=0;i<entrada.length;i++){
+                if(entrada[i]=='a'){
+                    saida[j]='d';
+                    j++;
+               
+                }
+                else if(entrada[i]== ' '){
+                    saida[j]=' ';
+                    j++;
+                }
+                else if(entrada[i]=='b'){
+                    saida[j]='e';
+                    j++;
+                }
+                else if(entrada[i]=='c'){
+                    saida[j]='f';
+                    j++;
+                }
+                else if(entrada[i]=='d'){
+                    saida[j]='g';
+                    j++;
+                }
+                else if(entrada[i]=='e'){
+                    saida[j]='h';
+                    j++;
+                }
+                else if(entrada[i]=='f'){
+                    saida[j]='i';
+                    j++;
+                }
+                else if(entrada[i]=='g'){
+                    saida[j]='j';
+                    j++;
+                }
+                else if(entrada[i]=='h'){
+                    saida[j]='k';
+                    j++;
+                }
+                else if(entrada[i]=='i'){
+                    saida[j]='l';
+                    j++;
+                }
+                else if(entrada[i]=='j'){
+                    saida[j]='m';
+                    j++;
+                }
+                else if(entrada[i]=='k'){
+                    saida[j]='n';
+                    j++;
+                }
+                else if(entrada[i]=='l'){
+                    saida[j]='o';
+                    j++;
+                }
+                else if(entrada[i]=='m'){
+                    saida[j]='p';
+                    j++;
+                }
+                else if(entrada[i]=='n'){
+                    saida[j]='q';
+                    j++;
+                }
+                else if(entrada[i]=='o'){
+                    saida[j]='r';
+                    j++;
+                }
+                else if(entrada[i]=='p'){
+                    saida[j]='s';
+                    j++;
+                }
+                else if(entrada[i]=='q'){
+                    saida[j]='t';
+                    j++;
+                }
+                else if(entrada[i]=='r'){
+                    saida[j]='u';
+                    j++;
+                }
+                else if(entrada[i]=='s'){
+                    saida[j]='v';
+                    j++;
+                }
+                else if(entrada[i]=='t'){
+                    saida[j]='w';
+                    j++;
+                }
+                else if(entrada[i]=='u'){
+                    saida[j]='x';
+                    j++;
+                }
+                else if(entrada[i]=='v'){
+                    saida[j]='y';
+                    j++;
+                }
+                else if(entrada[i]=='w'){
+                    saida[j]='z';
+                    j++;
+                }
+                else if(entrada[i]=='x'){
+                    saida[j]='a';
+                    j++;
+                }
+                else if(entrada[i]=='y'){
+                    saida[j]='b';
+                    j++;
+                }
+                else if(entrada[i]=='z'){
+                    saida[j]='c';
+                    j++;
+                }
+            }
+
+            const a = saida.join('');
+            document.getElementById("result").innerText = 'Mensagem Criptografada:\n'+a;
+            clearResults();
+        }
+            
+            
+
+        const decrypt = () => {
+            var input = document.getElementById("message");
+            var entrada = input.value;
+            entrada.split();
+            var saida = new Array();
+            let j=0;
+            saida[0] = 'a';
+            document.getElementById("result").innerText = null;
+            for(var i=0;i<entrada.length;i++){
+                if(entrada[i]=='d'){
+                    saida[j]='a';
+                    j++;
+                }
+                else if(entrada[i]== ' '){
+                    saida[j]=' ';
+                    j++;
+                }
+                else if(entrada[i]=='e'){
+                    saida[j]='b';
+                    j++;
+                }
+                else if(entrada[i]=='f'){
+                    saida[j]='c';
+                    j++;
+                }
+                else if(entrada[i]=='g'){
+                    saida[j]='d';
+                    j++;
+                }
+                else if(entrada[i]=='h'){
+                    saida[j]='e';
+                    j++;
+                }
+                else if(entrada[i]=='i'){
+                    saida[j]='f';
+                    j++;
+                }
+                else if(entrada[i]=='j'){
+                    saida[j]='g';
+                    j++;
+                }
+                else if(entrada[i]=='k'){
+                    saida[j]='h';
+                    j++;
+                }
+                else if(entrada[i]=='l'){
+                    saida[j]='i';
+                    j++;
+                }
+                else if(entrada[i]=='m'){
+                    saida[j]='j';
+                    j++;
+                }
+                else if(entrada[i]=='n'){
+                    saida[j]='k';
+                    j++;
+                }
+                else if(entrada[i]=='o'){
+                    saida[j]='l';
+                    j++;
+                }
+                else if(entrada[i]=='p'){
+                    saida[j]='m';
+                    j++;
+                }
+                else if(entrada[i]=='q'){
+                    saida[j]='n';
+                    j++;
+                }
+                else if(entrada[i]=='r'){
+                    saida[j]='o';
+                    j++;
+                }
+                else if(entrada[i]=='s'){
+                    saida[j]='p';
+                    j++;
+                }
+                else if(entrada[i]=='t'){
+                    saida[j]='q';
+                    j++;
+                }
+                else if(entrada[i]=='u'){
+                    saida[j]='r';
+                    j++;
+                }
+                else if(entrada[i]=='v'){
+                    saida[j]='s';
+                    j++;
+                }
+                else if(entrada[i]=='w'){
+                    saida[j]='t';
+                    j++;
+                }
+                else if(entrada[i]=='x'){
+                    saida[j]='u';
+                    j++;
+                }
+                else if(entrada[i]=='y'){
+                    saida[j]='v';
+                    j++;
+                }
+                else if(entrada[i]=='z'){
+                    saida[j]='w';
+                    j++;
+                }
+                else if(entrada[i]=='a'){
+                    saida[j]='x';
+                    j++;
+                }
+                else if(entrada[i]=='b'){
+                    saida[j]='y';
+                    j++;
+                }
+                else if(entrada[i]=='c'){
+                    saida[j]='z';
+                    j++;
+                }
+            }
+            const a = saida.join('');
+            document.getElementById("result").innerText = 'Mensagem Descriptografada:\n'+a;
+            clearResults();
+        }
+
+        const clearResults = () => {
+            var input = document.getElementById("message");
+            input.value = null;
+        }
+
+        window.onload = () => {
+            document.getElementById('cryptography').disabled = true;
+            document.getElementById('decryption').disabled = true;
+
+
+
+            document.getElementById('message').addEventListener('input', () => {
+                enableButtons(); 
+            });
+
+
+            document.getElementById('cryptography').addEventListener('click', cryptography);
+            document.getElementById('decryption').addEventListener('click', decryption);
+        };
+
+        const enableButtons = () => {
+            if (getMessage().trim().length !== 0) {
+                document.getElementById('cryptography').disabled = false;
+                document.getElementById('decryption').disabled = false;
+            } else {
+                document.getElementById('cryptography').disabled = true;
+                document.getElementById('decryption').disabled = true;
+            }
+        };
+        
+        const getMessage = () => document.getElementById('message').value;
+
+    </script>
+</body>
+</html>
