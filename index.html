@@ -286,6 +286,8 @@
         const clearResults = () => {
             var input = document.getElementById("message");
             input.value = null;
+            document.getElementById('cryptography').disabled = true;
+            document.getElementById('decryption').disabled = true;
         }
 
         window.onload = () => {
