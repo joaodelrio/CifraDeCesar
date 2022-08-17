@@ -64,7 +64,13 @@ body{
     cursor: pointer;
 }
 
+#box-result{
+    display:flex;
+    justify-content: center;
+}
+
 #result{
+    width: 33%;
     font-size: 30px;
     border-radius: 10px;
     font-family: 'Montserrat Alternates', sans-serif;
