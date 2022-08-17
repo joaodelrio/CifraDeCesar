@@ -11,7 +11,7 @@ Para simular um automato, utilizamos o laço de repitação **for**, e a estrutu
 
 ### 📋 Pré-requisitos
 
-Para Criptografar uma mensagem usando este meio, é necessário a inserção apenas de letras minúsculas.
+Para Criptografar uma mensagem usando este meio, é necessário a inserção na caixa de texto apenas de letras minúsculas.
 
 
 ### 🔧 Utilização
