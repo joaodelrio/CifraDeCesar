@@ -5,54 +5,40 @@ A Cifra de César é uma técnica de Criptografia na qual cada letra do texto é
 
 ### 📋 Pré-requisitos
 
-Para Criptografar uma mensagem usando esse meio, é necessário a utilização de dois alfabetos, assim como citado anteriormente.
+Para Criptografar uma mensagem usando este meio, é necessário a inserção apenas de letras minúsculas.
+
+
+### 🔧 Utilização
+
+Para utilizar dessa técnica, é necessário entrar no site e inserir a mensagem que deseja Criptografar ou Descriptografar na caixa de texto.
+
+Logo após entrar no site, duas opções serão sugeridas; Criptografar ou Descriptografar, assim como citados anteriormente.
 
 ```
-Normal:  ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Criptografado: DEFGHIJKLMNOPQRSTUVWXYZABC
+Print do site
 ```
 
-### 🔧 Instalação
-
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
+Para realizar alguma dessas duas operações, o alfabeto utilizado será esse:
 
 ```
-Dar exemplos
+Normal:  abcdefghijklmnopqrstuvwxyz
+Criptografado: defghijklmnopqrstuvwxyzabc
 ```
+Ou seja, a cada letra, será pulado 3 casas adiante.
 
-E repita:
 
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Executando os testes
 
-Explicar como executar os testes automatizados para este sistema.
+Exemplo 1:
 
-### 🔩 Analise os testes de ponta a ponta
+Utilizando o meio de Criptografia, Criptografe a mensagem: joao
 
-Explique que eles verificam esses testes e porquê.
+Exemplo 2:
 
-```
-Dar exemplos
-```
+Utilizando o meio de Descriptografia, Descriptografe a mensagem: joao
 
-### ⌨️ E testes de estilo de codificação
 
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Desenvolvimento
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
 
@@ -61,13 +47,7 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
 * [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
 
-## 🖇️ Colaborando
 
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
 ## ✒️ Autores
 
@@ -75,15 +55,3 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 * **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
 * **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢
-* Convide alguém da equipe para uma cerveja 🍺 
-
